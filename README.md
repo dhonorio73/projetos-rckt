@@ -4,6 +4,22 @@ Página pessoal de links para reunir redes sociais e conteúdos em um só lugar.
 
 **Repositório:** [github.com/dhonorio73/projetos-rckt](https://github.com/dhonorio73/projetos-rckt)
 
+## Prévia
+
+<p align="center">
+  <img src="assets/avatar.png" width="120" alt="Avatar de Douglas Honório">
+</p>
+
+<p align="center">
+  <img src="assets/bg-desktop.jpg" width="48%" alt="Fundo do tema escuro">
+  <img src="assets/bg-desktop-light.jpg" width="48%" alt="Fundo do tema claro">
+</p>
+
+<p align="center">
+  <em>Tema escuro</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <em>Tema claro</em>
+</p>
+
 ## Visão geral
 
 A página apresenta o perfil de Douglas Honório, links de destaque e acesso às redes sociais. O switch abaixo do nome alterna entre os temas claro e escuro.
