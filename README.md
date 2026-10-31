@@ -1,0 +1,76 @@
+# DevLinks
+
+Página pessoal de links para reunir redes sociais e conteúdos em um só lugar. O projeto tem layout responsivo, tema claro e escuro e uma interface com efeitos sutis de transparência e interação.
+
+**Repositório:** [github.com/dhonorio73/projetos-rckt](https://github.com/dhonorio73/projetos-rckt)
+
+## Visão geral
+
+A página apresenta o perfil de Douglas Honório, links de destaque e acesso às redes sociais. O switch abaixo do nome alterna entre os temas claro e escuro.
+
+### Recursos
+
+- Layout adaptável para dispositivos móveis e desktop.
+- Alternância entre tema claro e escuro.
+- Links para GitHub, Instagram e LinkedIn, abertos em uma nova aba.
+- Ícones Ionicons e fonte Inter.
+- Estados de foco visíveis para navegação por teclado.
+- Efeitos de hover nos links.
+
+## Tecnologias
+
+- HTML5
+- CSS3
+- JavaScript
+- [Ionicons](https://ionic.io/ionicons)
+- [Google Fonts — Inter](https://fonts.google.com/specimen/Inter)
+
+## Executar localmente
+
+Não é necessário instalar dependências.
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/dhonorio73/projetos-rckt.git
+   ```
+
+2. Abra a pasta no Visual Studio Code.
+3. Abra `index.html` no navegador ou use a extensão Live Server para executar o projeto em um servidor local.
+
+Os ícones e a fonte são carregados de serviços externos, então é necessária uma conexão com a internet para exibi-los.
+
+## Estrutura
+
+```text
+.
+├── assets/
+│   ├── avatar-light.png
+│   ├── avatar.png
+│   ├── bg-desktop-light.jpg
+│   ├── bg-desktop.jpg
+│   ├── bg-mobile-light.jpg
+│   ├── bg-mobile.jpg
+│   ├── moon-stars.svg
+│   └── sun.svg
+├── index.html
+├── style.css
+└── theme.js
+```
+
+## Personalização
+
+- Atualize a foto, o nome e os destinos dos links em `index.html`.
+- Ajuste cores, fundos e espaçamentos em `style.css`.
+- O comportamento do switch de tema fica em `theme.js`.
+- Os fundos, avatares e ícones locais estão na pasta `assets/`.
+
+## Redes sociais
+
+- [GitHub](https://github.com/Dhonorio73)
+- [Instagram](https://www.instagram.com/dhonorio73)
+- [LinkedIn](https://www.linkedin.com/in/dhonorio73)
+
+---
+
+Criado por **Douglas Honório**.
