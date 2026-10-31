@@ -1,0 +1,254 @@
+body {
+  background-color: #1b101c;
+  background-image: url("./assets/bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#container {
+  width: calc(100% - 32px);
+  max-width: 480px;
+  margin: 56px auto 24px;
+  margin-top: clamp(32px, 8vh, 56px);
+}
+
+#theme-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 64px;
+  height: 34px;
+  margin: 16px auto 0;
+  padding: 0 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 180ms ease, border-color 180ms ease;
+}
+
+#theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#theme-toggle:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+
+#theme-toggle .theme-icon {
+  z-index: 1;
+  width: 14px;
+  height: 14px;
+  filter: invert(1);
+}
+
+#theme-toggle-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 26px;
+  height: 26px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 180ms ease;
+}
+
+body.light #theme-toggle {
+  background-color: rgba(36, 32, 42, 0.16);
+  border-color: rgba(36, 32, 42, 0.35);
+}
+
+body.light #theme-toggle:hover {
+  background-color: rgba(36, 32, 42, 0.24);
+}
+
+body.light #theme-toggle .theme-icon {
+  filter: none;
+}
+
+body.light #theme-toggle-thumb {
+  transform: translateX(30px);
+}
+
+#profile {
+  padding: 24px;
+  text-align: center;
+}
+
+#profile-img {
+  display: block;
+  width: 112px;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+#profile-name {
+  margin: 8px 0 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+ul li + li {
+  margin-top: 16px;
+}
+
+ul li {
+  padding: 16px 24px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.06));
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  -webkit-transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease, -webkit-transform 180ms ease;
+  transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+ul li:hover {
+  background: rgba(255, 255, 255, 0.18);
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.12));
+  border-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+ul a,
+ul a:visited,
+ul a:hover,
+ul a:active {
+  display: block;
+  text-decoration: none;
+}
+
+ul a:focus {
+  outline: 2px solid white;
+  outline-offset: 4px;
+}
+
+#social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+#social-links a {
+  display: flex;
+  padding: 10px;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 8px;
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+
+#social-links a:hover,
+#social-links a:focus-visible {
+  background-color: rgba(255, 255, 255, 0.18);
+  transform: translateY(-2px);
+}
+
+#social-links a:focus {
+  outline: 2px solid white;
+  outline-offset: 4px;
+}
+
+#social-links ion-icon {
+  width: 24px;
+  height: 24px;
+}
+
+#footer {
+  padding: 8px 16px 24px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+body.light {
+  color: #24202a;
+  background-color: #f5f2f7;
+  background-image: url("./assets/bg-mobile-light.jpg");
+}
+
+body.light *,
+body.light *::before,
+body.light *::after {
+  color: #24202a;
+}
+
+body.light #theme-toggle:focus-visible,
+body.light ul a:focus,
+body.light #social-links a:focus {
+  outline-color: #24202a;
+}
+
+body.light ul li {
+  background: rgba(255, 255, 255, 0.58);
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.48));
+  border-color: rgba(36, 32, 42, 0.35);
+  box-shadow: 0 4px 16px rgba(36, 32, 42, 0.12);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+body.light ul li:hover {
+  background: rgba(255, 255, 255, 0.82);
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.66));
+  border-color: rgba(36, 32, 42, 0.55);
+  box-shadow: 0 8px 22px rgba(36, 32, 42, 0.16);
+}
+
+body.light #social-links a:hover,
+body.light #social-links a:focus-visible {
+  background-color: rgba(36, 32, 42, 0.12);
+}
+
+@media (min-width: 700px) {
+  body {
+    background-image: url("./assets/bg-desktop.jpg");
+    background-position: top center;
+  }
+
+  body.light {
+    background-image: url("./assets/bg-desktop-light.jpg");
+  }
+}
+
+@media (hover: none) {
+  ul li:hover {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
