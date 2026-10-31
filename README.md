@@ -4,6 +4,8 @@ Página pessoal de links para reunir redes sociais e conteúdos em um só lugar.
 
 **Repositório:** [github.com/dhonorio73/projetos-rckt](https://github.com/dhonorio73/projetos-rckt)
 
+**Acesse o projeto:** [DevLinks no GitHub Pages](https://dhonorio73.github.io/projetos-rckt/)
+
 ## Prévia
 
 <p align="center">
