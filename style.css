@@ -78,6 +78,20 @@ body.light #theme-toggle .theme-icon {
   filter: none;
 }
 
+body.light .action-button {
+  color: #24202a;
+  background: rgba(255, 255, 255, 0.58);
+  border-color: rgba(36, 32, 42, 0.35);
+}
+
+body.light .action-button:hover {
+  background-color: rgba(255, 255, 255, 0.82);
+}
+
+body.light .action-button:focus-visible {
+  outline-color: #24202a;
+}
+
 body.light #theme-toggle-thumb {
   transform: translateX(30px);
 }
@@ -90,7 +104,7 @@ body.light #theme-toggle-thumb {
 #profile-img {
   display: block;
   width: 112px;
-  height: auto;
+  height: 112px;
   max-width: 100%;
   margin: 0 auto;
   -webkit-border-radius: 50%;
@@ -189,6 +203,73 @@ ul a:focus {
   height: 24px;
 }
 
+#share-tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.action-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 10px 16px;
+  color: white;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.action-button:hover {
+  background-color: rgba(255, 255, 255, 0.22);
+  transform: translateY(-2px);
+}
+
+.action-button:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+
+.action-button ion-icon {
+  width: 18px;
+  height: 18px;
+}
+
+#qr-code {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+#qr-code[hidden] {
+  display: none;
+}
+
+#qr-code img {
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin: 8px auto;
+  padding: 8px;
+  background: white;
+  border-radius: 12px;
+}
+
+#qr-code p,
+#share-status {
+  font-size: 14px;
+}
+
+#share-status {
+  flex-basis: 100%;
+  text-align: center;
+}
+
 #footer {
   padding: 8px 16px 24px;
   text-align: center;
@@ -250,5 +331,14 @@ body.light #social-links a:focus-visible {
   ul li:hover {
     -webkit-transform: none;
     transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }

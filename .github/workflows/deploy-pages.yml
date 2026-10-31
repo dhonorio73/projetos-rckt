@@ -33,7 +33,7 @@ jobs:
         run: |
           mkdir -p _site/assets
           cp index.html style.css theme.js _site/
-          cp assets/avatar*.png assets/bg-*.jpg assets/*.svg _site/assets/
+          cp assets/avatar*.png assets/avatar-light.jpg assets/bg-*.jpg assets/*.svg assets/project-preview.png assets/project-qr.png _site/assets/
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3

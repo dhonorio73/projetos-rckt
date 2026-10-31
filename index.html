@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto</title>
+    <title>DevLinks | Douglas Honório</title>
+    <meta name="description" content="Acesse os links, projetos e redes sociais de Douglas Honório em um só lugar.">
+    <meta name="theme-color" content="#1b101c">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="DevLinks | Douglas Honório">
+    <meta property="og:description" content="Acesse os links, projetos e redes sociais de Douglas Honório em um só lugar.">
+    <meta property="og:url" content="https://dhonorio73.github.io/projetos-rckt/">
+    <meta property="og:image" content="https://dhonorio73.github.io/projetos-rckt/assets/project-preview.png">
+    <meta property="og:image:alt" content="Prévia da página DevLinks no tema escuro">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DevLinks | Douglas Honório">
+    <meta name="twitter:description" content="Acesse os links, projetos e redes sociais de Douglas Honório em um só lugar.">
+    <meta name="twitter:image" content="https://dhonorio73.github.io/projetos-rckt/assets/project-preview.png">
+    <link rel="canonical" href="https://dhonorio73.github.io/projetos-rckt/">
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    </head>
+</head>
 <body>
     <div id="container">
         <div id="profile">
             <img
                 src="./assets/avatar.png"
-                alt="Foto de Douglas Honório em estilo de charge, usando boné, barba e óculos."
+                alt="Retrato de Douglas Honório."
                 id="profile-img"
             >
             <p id="profile-name">@douglas73</p>
@@ -25,10 +39,9 @@
             </button>
         </div>
         <ul>
-            <li>Inscreva-se</li>
+            <li>Inscrições em breve</li>
             <li><a href="https://github.com/Dhonorio73" target="_blank" rel="noopener noreferrer">Meu GitHub</a></li>
-            <li>Meu e-book</li>
-            <li>Meu portfólio</li>
+            <li>Portfólio em breve</li>
             <li><a href="https://github.com/Dhonorio73" target="_blank" rel="noopener noreferrer">Conheça e explore</a></li>
         </ul>
         <div id="social-links" role="group" aria-label="Redes sociais">
@@ -41,6 +54,26 @@
             <a href="https://www.linkedin.com/in/dhonorio73" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
             </a>
+        </div>
+        <div id="share-tools">
+            <button id="share-button" class="action-button" type="button">
+                <ion-icon name="share-social-outline" aria-hidden="true"></ion-icon>
+                Compartilhar
+            </button>
+            <button
+                id="qr-toggle"
+                class="action-button"
+                type="button"
+                aria-expanded="false"
+                aria-controls="qr-code"
+            >
+                Mostrar QR Code
+            </button>
+            <div id="qr-code" hidden>
+                <img src="./assets/project-qr.png" alt="QR Code para abrir o site DevLinks">
+                <p>Aponte a câmera do celular para acessar o site.</p>
+            </div>
+            <p id="share-status" role="status" aria-live="polite"></p>
         </div>
     </div>
     <footer id="footer">

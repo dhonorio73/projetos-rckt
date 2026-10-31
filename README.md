@@ -33,8 +33,11 @@ A página apresenta o perfil de Douglas Honório, links de destaque e acesso às
 ### Recursos
 
 - Layout adaptável para dispositivos móveis e desktop.
-- Alternância entre tema claro e escuro.
+- Alternância entre tema claro e escuro, com preferência salva no navegador.
+- Avatares próprios para cada tema.
 - Links para GitHub, Instagram e LinkedIn, abertos em uma nova aba.
+- Compartilhamento do site e QR Code para acesso pelo celular.
+- Favicon e prévia para compartilhamento em redes sociais.
 - Ícones Ionicons e fonte Inter.
 - Estados de foco visíveis para navegação por teclado.
 - Efeitos de hover nos links.
@@ -71,7 +74,10 @@ Os ícones e a fonte são carregados de serviços externos, então é necessári
 ```text
 .
 ├── assets/
+│   ├── avatar-light.jpg
+│   ├── favicon.svg
 │   ├── project-preview.png
+│   ├── project-qr.png
 │   ├── avatar-light.png
 │   ├── avatar.png
 │   ├── bg-desktop-light.jpg
