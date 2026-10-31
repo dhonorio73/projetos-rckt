@@ -7,6 +7,10 @@ Página pessoal de links para reunir redes sociais e conteúdos em um só lugar.
 ## Prévia
 
 <p align="center">
+  <img src="assets/project-preview.png" width="80%" alt="Prévia da página DevLinks no tema escuro">
+</p>
+
+<p align="center">
   <img src="assets/avatar.png" width="120" alt="Avatar de Douglas Honório">
 </p>
 
@@ -35,11 +39,15 @@ A página apresenta o perfil de Douglas Honório, links de destaque e acesso às
 
 ## Tecnologias
 
-- HTML5
-- CSS3
-- JavaScript
-- [Ionicons](https://ionic.io/ionicons)
-- [Google Fonts — Inter](https://fonts.google.com/specimen/Inter)
+- **HTML5** — estrutura e conteúdo da página.
+- **CSS3** — layout responsivo, temas claro e escuro e efeitos visuais.
+- **JavaScript** — alternância entre os temas.
+- [**Ionicons**](https://ionic.io/ionicons) — ícones das redes sociais.
+- [**Google Fonts — Inter**](https://fonts.google.com/specimen/Inter) — tipografia do projeto.
+
+## Aprendizado
+
+Pratiquei a manipulação do DOM com JavaScript para alternar os temas e atualizar o estado acessível do switch.
 
 ## Executar localmente
 
@@ -61,6 +69,7 @@ Os ícones e a fonte são carregados de serviços externos, então é necessári
 ```text
 .
 ├── assets/
+│   ├── project-preview.png
 │   ├── avatar-light.png
 │   ├── avatar.png
 │   ├── bg-desktop-light.jpg
