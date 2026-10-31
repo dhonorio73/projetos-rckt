@@ -32,7 +32,7 @@ jobs:
       - name: Prepare site files
         run: |
           mkdir -p _site/assets
-          cp index.html style.css theme.js _site/
+          cp index.html portfolio.html style.css theme.js _site/
           cp assets/avatar*.png assets/avatar-light.jpg assets/bg-*.jpg assets/*.svg assets/project-preview.png assets/project-qr.png _site/assets/
 
       - name: Upload site artifact

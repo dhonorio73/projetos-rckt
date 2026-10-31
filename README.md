@@ -6,6 +6,8 @@ Página pessoal de links para reunir redes sociais e conteúdos em um só lugar.
 
 **Acesse o projeto:** [DevLinks no GitHub Pages](https://dhonorio73.github.io/projetos-rckt/)
 
+**Portfólio:** [Projetos de Douglas Honório](https://dhonorio73.github.io/projetos-rckt/portfolio.html)
+
 ## Prévia
 
 <p align="center">
@@ -38,6 +40,7 @@ A página apresenta o perfil de Douglas Honório, links de destaque e acesso às
 - Links para GitHub, Instagram e LinkedIn, abertos em uma nova aba.
 - Compartilhamento do site e QR Code para acesso pelo celular.
 - Favicon e prévia para compartilhamento em redes sociais.
+- Página de portfólio com projetos publicados no GitHub.
 - Ícones Ionicons e fonte Inter.
 - Estados de foco visíveis para navegação por teclado.
 - Efeitos de hover nos links.
@@ -87,6 +90,7 @@ Os ícones e a fonte são carregados de serviços externos, então é necessári
 │   ├── moon-stars.svg
 │   └── sun.svg
 ├── index.html
+├── portfolio.html
 ├── style.css
 └── theme.js
 ```
