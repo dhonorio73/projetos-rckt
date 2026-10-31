@@ -62,7 +62,7 @@ body {
   height: 26px;
   background: white;
   border-radius: 50%;
-  transition: transform 180ms ease;
+  transition: transform 300ms ease-in-out;
 }
 
 body.light #theme-toggle {
